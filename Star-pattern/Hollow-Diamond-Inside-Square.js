@@ -1,3 +1,21 @@
+/*
+**********
+****  ****
+***    ***
+**      **
+*        *
+**      **
+***    ***
+****  ****
+**********
+This pattern is called a "Hollow Diamond Inside Square" or "Hollow X Pattern Inside a Square".
+
+It consists of:
+
+A solid square on the outer boundary.
+
+A hollow X-shape inside.
+*/
 let n=5;
 let noOfspace = 0;
 for(let i = n; i>0;i--){
