@@ -1,4 +1,4 @@
-
+//Check odd or even and reverses it if odd
 function ReverseOddString(str) {
     let newStr = "";
     if (str.length % 2 !== 0) {
@@ -11,14 +11,14 @@ function ReverseOddString(str) {
     return newStr;
 
 }
-function ReverseOddLengthString(str) {
-    // search and separate
-    str=str.trim();
+// Search and separate words
+function Search(str) {
+    // str=str.trim();
     let word = ''
     let words = ''
     for (let i = 0; i < str.length; i++) {
         if (str[i] === ' ') {
-            words += ReverseOddString(word) + ' ';
+            words += ReverseOddString(word) + '-';
             word = ''
         } else word += str[i];
     }
@@ -29,5 +29,5 @@ function ReverseOddLengthString(str) {
 
     // ReverseString(str);
 }
-ReverseOddLengthString("one two three four");
-ReverseOddLengthString("make sure uoy only esrever sdrow of ddo length");
+Search("one two three four");
+Search("make sure uoy only esrever sdrow of ddo length");
